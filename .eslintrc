@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+    "max-len": [2, 128, 4, {
+      "ignoreComments": false,
+      "ignoreUrls": true
+    }],
+    "react/prefer-stateless-function": [0],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+  },
+  "globals": {
+    "document": true,
+    "window": true
+  }
+}
