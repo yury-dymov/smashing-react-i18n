@@ -7,7 +7,8 @@
     "build": "better-npm-run build",
     "webpack-devserver": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8050 --host 0.0.0.0",
     "nodemon": "better-npm-run nodemon",
-    "lint": "eslint src --ext .js,.jsx"
+    "lint": "eslint src --ext .js,.jsx",
+    "build:langs": "babel scripts/translate.js | node"
   },
   "betterScripts": {
     "build": {
@@ -37,6 +38,7 @@
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.8",
+    "babel-plugin-react-intl": "^2.2.0",
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
@@ -55,8 +57,13 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
+    "accept-language": "^3.0.15",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.1.3",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "react-intl": "^2.1.5"
   }
 }
