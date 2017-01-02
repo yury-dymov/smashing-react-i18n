@@ -45,7 +45,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: 'react-hot!babel!eslint-loader', exclude: [/node_modules/, /public/] }
+      { test: /\.jsx?$/, loader: 'react-hot!babel', exclude: [/node_modules/, /public/] }
     ]
   },
   devtool: process.env.NODE_ENV !== 'production' ? 'source-map' : null,
