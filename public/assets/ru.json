@@ -1,0 +1,5 @@
+{
+  "app.counting": "Мне нужно купить {count, number} {count, plural, one {яблоко} few {яблока} many {яблок}}",
+  "app.hello_world2": "Привет мир 2!",
+  "app.hello_world": "Привет мир!"
+}
